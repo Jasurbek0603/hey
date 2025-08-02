@@ -1,193 +1,116 @@
-// // 1-masala
-// function countdown(n) {
-//   while (n >= 0) {
-//     console.log(n);
-//     n = n - 1;
-//   }
+//  1 - solution
+
+// function addtoend(arr, value) {
+//   arr.push(value);
+//   return arr;
 // }
-// countdown(5);
+// let result =addtoend([10, 20], 30);
+// console.log(result)
 
-// // 2-masala
-// function printEven(arr) {
-//   let i = 0;
-//   while (i < arr.length) {
-//     if (arr[i] % 2 == 0) {
-//       console.log(arr[i]);
-//     }
-//     i++;
-//   }
+//  2- solution
+// function removelast(arr) {
+//   arr.pop();
+//   return arr;
 // }
-// printEven([1, 2, 3, 4]);
+// let myarray = [1, 2, 4, 5];
+// let result = removelast(myarray);
+// console.log(result);
 
-// // 3-masala
-// function countA(str) {
-//   let i = 0;
-//   let sanoq = 0;
-//   while (i < str.length) {
-//     if (str[i] === "a") {
-//       sanoq++;
-//     }
-//     i++;
-//   }
-//   console.log(sanoq);
+// 3- solution
+
+// function addtostart(arr, value) {
+//   arr.unshift(value);
+//   return arr;
 // }
-// countA("salom");
+// let myarray = [1, 3, 5, 7];
+// let result = addtostart(myarray, "jasur");
+// console.log(result);
 
-// // 4-masala
-// function sumArray(arr) {
-//   let i = 0;
-//   let sum = 0;
-//   while (i < arr.length) {
-//     sum = sum + arr[i];
-//     i++;
-//   }
-//   console.log(sum);
+//   4- solution
+// function removefirst(arr) {
+//   arr.shift();
+//   return arr;
 // }
-// sumArray([3, 2, 1]);
+// let myarray = [2, 4, 6];
+// let result = removefirst(myarray);
+// console.log(result);
 
-// // 5-masala
-// function reverseText(str) {
-//   let i = str.length - 1;
-//   let teskari = "";
-//   while (i >= 0) {
-//     teskari = teskari + str[i];
-//     i--;
-//   }
-//   console.log(teskari);
+//    5 - solution
+// function cleanstring(str) {
+//   str.trim();
+//   return str;
 // }
-// reverseText("hi");
+// let myarray = ["     qaniketdik  "];
+// let result = cleanstring(myarray);
+// console.log(result);
 
-// // 6-masala
-// function printNegative(arr) {
-//   let i = 0;
-//   while (i < arr.length) {
-//     if (arr[i] < 0) {
-//       console.log(arr[i]);
-//     }
-//     i++;
-//   }
+//    6- solution
+// function shout(str) {
+//   return str.toUpperCase();
 // }
-// printNegative([-1, 2, -3]);
+// console.log(shout("hello guys"))
 
-// // 7-masala
-// function countChars(str) {
-//   let i = 0;
-//   let c = 0;
-//   while (i < str.length) {
-//     c++;
-//     i++;
-//   }
-//   console.log(c);
+//    7- solution
+// function hasValue(arr, value) {
+//   return arr.includes(value);
 // }
-// countChars("hello");
+// let myArray = [10, 20, 30];
+// console.log(hasValue(myArray, 20));
 
-// // 8-masala
-// function printOdds(n) {
-//   let i = 0;
-//   while (i <= n) {
-//     if (i % 2 == 1) {
-//       console.log(i);
-//     }
-//     i++;
-//   }
+//  8 - solution
+// function startsWithA(str) {
+//   return str.startsWith("A");
 // }
-// printOdds(5);
+// console.log(startsWithA("Apple"));
 
-// // 9-masala
-// function findMax(arr) {
-//   let i = 1;
-//   let max = arr[0];
-//   while (i < arr.length) {
-//     if (arr[i] > max) {
-//       max = arr[i];
-//     }
-//     i++;
-//   }
-//   console.log(max);
+//  9 -solution
+// function containsApple(arr) {
+//   return arr.includes("olma");
 // }
-// findMax([1, 9, 3]);
+// console.log(containsApple("nok, o'rik, uzum"));
 
-// // 10-masala
-// function countO(str) {
-//   let i = 0;
-//   let sanoq = 0;
-//   while (i < str.length) {
-//     if (str[i] === "o") {
-//       sanoq++;
-//     }
-//     i++;
-//   }
-//   console.log(sanoq);
+//  10 - solution
+// function getKeys(obj) {
+//   return Object.keys(obj);
 // }
-// countO("hello world");
+// const student = {
+//   name: "jasur",
+//   age: 17,
+//   grade:" A",
+// };
+// console.log(getKeys(student));
 
-// // 11-masala
-// function countZeros(arr) {
-//   let i = 0;
-//   let count = 0;
-//   while (i < arr.length) {
-//     if (arr[i] === 0) {
-//       count++;
-//     }
-//     i++;
-//   }
-//   console.log(count);
+//  11- solution
+// function getValues(obj) {
+//   return Object.values(obj);
 // }
-// countZeros([0, 1, 0]);
+// const information = {
+//   job: "laziness",
+//   livingplace: "donot know",
+//   height: 1.43,
+// };
+// console.log(getValues(information));
 
-// // 12-masala
-// function sumPositive(arr) {
-//   let i = 0;
-//   let hold = 0;
-//   while (i < arr.length) {
-//     if (arr[i] > 0) {
-//       hold = hold + arr[i];
-//     }
-//     i++;
-//   }
-//   console.log(hold);
+// 12 -solution
+// function removeSpaces(str) {
+//   return str.replaceAll(" ", "");
 // }
-// sumPositive([-1, 2, 3]);
+// console.log(removeSpaces(" hello everyone guys "));
 
-// // 13-masala
-// function printLowercase(str) {
-//   let i = 0;
-//   while (i < str.length) {
-//     let kod = str.charCodeAt(i);
-//     if (kod >= 97 && kod <= 122) {
-//       console.log(str[i]);
-//     }
-//     i++;
-//   }
+//  13-solution
+// function reverseArray(arr) {
+//   return arr.reverse();
 // }
-// printLowercase("Salom");
+// console.log(reverseArray([1, 32, 4, 5, 8]));
 
-// // 14-masala
-// function printOddIndexes(arr) {
-//   let i = 0;
-//   while (i < arr.length) {
-//     if (i % 2 == 1) {
-//       console.log(arr[i]);
-//     }
-//     i++;
-//   }
+  // 14- solution 
+//   function objectToEntries(obj) {
+//   return Object.entries(obj);
 // }
-// printOddIndexes(["a", "b", "c", "d"]);
+// const user = {
+//   name: "Jasur",
+//   age: 17,
+//   country: "Uzbekistan"
+// };
 
-// // 15-masala
-// function replaceE(str) {
-//   let i = 0;
-//   let natija = "";
-//   while (i < str.length) {
-//     if (str[i] === "e") {
-//       natija += "3";
-//     } else {
-//       natija += str[i];
-//     }
-//     i++;
-//   }
-//   console.log(natija);
-// }
-// replaceE("hello");
-
-
+// console.log(objectToEntries(user));
