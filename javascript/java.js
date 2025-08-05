@@ -1,116 +1,115 @@
-//  1 - solution
-
-// function addtoend(arr, value) {
-//   arr.push(value);
-//   return arr;
+// 1- solution
+// function capitalizeWords(str) {
+//   return str
+//     .split(" ")
+//     .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+//     .join(" ");
 // }
-// let result =addtoend([10, 20], 30);
-// console.log(result)
+// console.log(capitalizeWords("salom dunyo"));
 
-//  2- solution
-// function removelast(arr) {
-//   arr.pop();
-//   return arr;
+// 2-solution
+// function toUpperNames(names) {
+//   return names.map(name => name.toUpperCase());
 // }
-// let myarray = [1, 2, 4, 5];
-// let result = removelast(myarray);
-// console.log(result);
+// console.log(toUpperNames(["ali", "vali", "hasan"]));
 
-// 3- solution
-
-// function addtostart(arr, value) {
-//   arr.unshift(value);
-//   return arr;
+// 3-solution
+// function countPositive(numbers) {
+//   return numbers.filter(num => num > 0).length;
 // }
-// let myarray = [1, 3, 5, 7];
-// let result = addtostart(myarray, "jasur");
-// console.log(result);
+// console.log(countPositive([1, -3, 4, 0, 6]));
 
-//   4- solution
-// function removefirst(arr) {
-//   arr.shift();
-//   return arr;
-// }
-// let myarray = [2, 4, 6];
-// let result = removefirst(myarray);
-// console.log(result);
-
-//    5 - solution
-// function cleanstring(str) {
-//   str.trim();
-//   return str;
-// }
-// let myarray = ["     qaniketdik  "];
-// let result = cleanstring(myarray);
-// console.log(result);
-
-//    6- solution
-// function shout(str) {
-//   return str.toUpperCase();
-// }
-// console.log(shout("hello guys"))
-
-//    7- solution
-// function hasValue(arr, value) {
-//   return arr.includes(value);
-// }
-// let myArray = [10, 20, 30];
-// console.log(hasValue(myArray, 20));
-
-//  8 - solution
-// function startsWithA(str) {
-//   return str.startsWith("A");
-// }
-// console.log(startsWithA("Apple"));
-
-//  9 -solution
-// function containsApple(arr) {
-//   return arr.includes("olma");
-// }
-// console.log(containsApple("nok, o'rik, uzum"));
-
-//  10 - solution
-// function getKeys(obj) {
-//   return Object.keys(obj);
-// }
-// const student = {
-//   name: "jasur",
-//   age: 17,
-//   grade:" A",
-// };
-// console.log(getKeys(student));
-
-//  11- solution
-// function getValues(obj) {
-//   return Object.values(obj);
-// }
-// const information = {
-//   job: "laziness",
-//   livingplace: "donot know",
-//   height: 1.43,
-// };
-// console.log(getValues(information));
-
-// 12 -solution
+// 4-solution
 // function removeSpaces(str) {
-//   return str.replaceAll(" ", "");
+//   return str.trim().replaceAll(" ", "");
 // }
-// console.log(removeSpaces(" hello everyone guys "));
-
-//  13-solution
-// function reverseArray(arr) {
-//   return arr.reverse();
+// console.log(removeSpaces(" salom  dunyo "));
+// 5-solution
+// function hasEvenNumber(arr) {
+//   return arr.some(num => num % 2 === 0);
 // }
-// console.log(reverseArray([1, 32, 4, 5, 8]));
+// console.log(hasEvenNumber([1, 3, 5, 8]))
 
-  // 14- solution 
-//   function objectToEntries(obj) {
-//   return Object.entries(obj);
+// 6-solution
+// function removeZeros(arr) {
+//   return arr.filter(num => num !== 0);
 // }
-// const user = {
-//   name: "Jasur",
-//   age: 17,
-//   country: "Uzbekistan"
-// };
+// console.log(removeZeros([0, 1, 2, 0, 3]));
 
-// console.log(objectToEntries(user));
+// 7-solution
+// function reverseWords(str) {
+//   return str
+//     .split(" ")
+//     .map(word => word.split("").reverse().join(""))
+//     .join(" ");
+// }
+// console.log(reverseWords("salom dunyo"));
+
+// 8.-solution
+// function threeLetterWords(words) {
+//   return words.filter((word) => word.length === 3);
+// }
+// console.log(threeLetterWords(["sal", "olma", "bor"]));
+
+// 9-solution
+// function doubleNumbers(numbers) {
+//   return numbers.map(num => num * 2);
+// }
+// console.log(doubleNumbers([1, 2, 3]));
+
+// 10-solution
+// function splitChars(str) {
+//   return str.split("");
+// }
+// console.log(splitChars("hello"));
+
+// 11-solution
+// function onlyIntegers(arr) {
+//   return arr.filter(Number.isInteger);
+// }
+// console.log(onlyIntegers([1.5, 2, 3.1, 4]));
+
+// 12-solution
+// function addIndex(arr) {
+//   return arr.map((value, index) => value + index);
+// }
+// console.log(addIndex([10, 20, 30]));
+
+// 13-solution
+// function countA(str) {
+//   return str
+//     .toLowerCase()
+//     .split("")
+//     .filter(char => char === 'a').length;
+// }
+// console.log(countA("Ananas"));
+
+// 14-solution
+// function getInitials(str) {
+//   return str
+//     .split(" ")
+//     .map(word => word.charAt(0))
+//     .join("");
+// }
+// console.log(getInitials("Hello World From JS"));
+
+// 15-solution
+// function flattenArray(arr) {
+//   return arr.flat();
+// }
+// console.log(flattenArray([1, [2, 3], [4, 5]]));
+
+// 16-solution
+// function onlyWords(arr) {
+//   return arr.filter(word => /^[a-zA-Z]+$/.test(word));
+// }
+// console.log(onlyWords(["hello", "123", "world!", "JS"]))
+
+// 17-solution
+// function extractNumbers(str) {
+//   return str
+//     .split("")
+//     .filter(char => !isNaN(char) && char !== " ")
+//     .map(Number);
+// }
+// console.log(extractNumbers("ab1c3d2"));
